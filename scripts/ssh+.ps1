@@ -12,7 +12,22 @@ $key = Read-Host -Prompt "Which server?"
 
 if ($d.ContainsKey($key)) {
 	$ssh = $d[$key]
-	ssh $ssh[0] -p $ssh[1] -i $ssh[2]
+	if ($ssh[0] -eq "") {
+		"That is not a valid hostname!"
+	}
+
+	if ($ssh[1] -eq $null) {
+		ssh $ssh[0]
+	}
+
+	elseif ($ssh[2] -eq $null) {
+		ssh $ssh[0] -p $ssh[1]
+	}
+
+	else {
+		ssh $ssh[0] -p $ssh[1] -i $ssh[2]
+	}
+
 }
 
 else {
