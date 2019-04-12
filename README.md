@@ -26,6 +26,7 @@ __**Steps**__
 Clone or download the repository.
 
 > \$ git clone https://github.com/Sharpz7/PowerSharp.git
+
 > \$ cd powersharp
 
 Run the script with:
@@ -33,6 +34,7 @@ Run the script with:
 > \$ install.ps1
 
 **PLEASE NOTE**
+
 To use the `.env` files, copy the files and remove the `default` from the front of there names, then they
 are good to go!
 
