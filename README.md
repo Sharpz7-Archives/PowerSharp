@@ -13,8 +13,8 @@ and make sure you use that font in your terminal. [Nerd-Fonts](https://nerdfonts
 
 It is recommended to have a nice terminal emulator for the best experience:
 
-    - [Hyper](https://hyper.is)
-    - [Cmder](https://cmder.net)
+   - [Hyper](https://hyper.is)
+   - [Cmder](https://cmder.net)
 
 Installation
 ============
