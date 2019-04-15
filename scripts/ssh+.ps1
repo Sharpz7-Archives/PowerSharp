@@ -1,6 +1,5 @@
-cd $PSScriptRoot
-cd ..
-$d = source "data/ssh.env"
+$dir = (get-item $PSScriptRoot).parent.FullName
+$d = source "$dir/data/ssh.env"
 
 foreach ($item in $d.keys) {
 	$ip =$d[$item][0]

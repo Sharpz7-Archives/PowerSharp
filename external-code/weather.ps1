@@ -38,9 +38,8 @@ param(
 <# BEGIN VARIABLES #>
 
 <# Get your API Key (it's free) from http://openweathermap.org/api and change the value below with your key #>
-cd $PSScriptRoot
-cd ..
-$d = source "data/.env"
+$dir = (get-item $PSScriptRoot).parent.FullName
+$d = source "$dir/data/.env"
 $API = $d["WEATHERKEY"]
 
 <# Check if you have entered an API key and if not, exit the script.
