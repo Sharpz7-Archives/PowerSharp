@@ -12,7 +12,8 @@ if ($key -like "y") {
     $new = [Environment]::GetEnvironmentVariable("Path", "User") + ";$loc\external-code"
     [Environment]::SetEnvironmentVariable("Path", $new, "User")
     "Done! You can edit the Profile here: ($env:USERPROFILE\Documents\WindowsPowerShell)"
-    "It is recommended to"
+    "It is recommended to download a terminal emulator"
+    "Here are some nice ones: https://hyper.is - https://cmder.net"
 } else {
     "Skipping Profile Install"
 }
