@@ -16,6 +16,7 @@ It is recommended to have a nice terminal emulator for the best experience:
 
    - [Hyper](https://hyper.is)
    - [Cmder](https://cmder.net)
+   - [Fluent-Terminal](https://github.com/felixse/FluentTerminal)
 
 To allow all the scripts to run without issue, or create you own, this command must be run:
 
