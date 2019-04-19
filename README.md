@@ -10,33 +10,44 @@ Required
 
 For the powershell theme, it is recommended you install a nerdfont for everything to work,
 and make sure you use that font in your terminal. [Nerd-Fonts](https://nerdfonts.com)
+(Note: the custom terminal will likely look better with a non-monospaced font.)
 
 It is recommended to have a nice terminal emulator for the best experience:
 
    - [Hyper](https://hyper.is)
    - [Cmder](https://cmder.net)
 
+To allow all the scripts to run without issue, or create you own, this command must be run:
+
+> \$ Set-ExecutionPolicy unrestricted
+
+**This will likely need admin access.**
+
 Installation
 ============
 
 The easiest way to install the app is to use the `install.ps1` script.
 
-__**Steps**__
+**Steps**
 
 Clone or download the repository.
 
 > \$ git clone https://github.com/Sharpz7/PowerSharp.git
 
-> \$ cd powersharp
+> \$ cd PowerSharp
 
 Run the script with:
 
-> \$ install.ps1
+> \$ .\install
 
 **PLEASE NOTE**
 
 To use the `.env` files, copy the files and remove the `default` from the front of there names, then they
 are good to go!
+
+To disable the powershell beep, use:
+
+> \$ set-service beep -startuptype disabled
 
 Special Thanks
 ==========

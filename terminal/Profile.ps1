@@ -7,21 +7,21 @@ function Prompt {
     $path = Split-Path (Get-Location) -Leaf
 
     Write-Host " $compassSymbol root@Sharp " -ForegroundColor "Yellow" -BackgroundColor "DarkGray" -NoNewline
-    Write-Host $arrowSymbol -ForegroundColor "DarkGray" -BackgroundColor "Blue" -NoNewline
+    Write-Host "$arrowSymbol " -ForegroundColor "DarkGray" -BackgroundColor "Blue" -NoNewline
     Write-Host " $folderSymbol ~/$path" -ForegroundColor "White" -BackgroundColor "Blue" -NoNewline
 
     $data = git branch
     if ($data) {
-        Write-Host $arrowSymbol -ForegroundColor "Blue" -BackgroundColor "Green" -NoNewline
+        Write-Host "$arrowSymbol " -ForegroundColor "Blue" -BackgroundColor "Green" -NoNewline
     }
     else {
-        Write-Host $arrowSymbol -ForegroundColor "Blue" -NoNewline
+        Write-Host "$arrowSymbol " -ForegroundColor "Blue" -NoNewline
     }
     foreach ($line in $data) {
         if ($line.Contains('*')) {
             $final = $line.substring(2)
             Write-Host " $branchSymbol $final" -ForegroundColor "DarkGray" -BackgroundColor "Green" -NoNewline
-            Write-Host $arrowSymbol -ForegroundColor "Green" -NoNewline
+            Write-Host "$arrowSymbol " -ForegroundColor "Green" -NoNewline
 
         }
     }
