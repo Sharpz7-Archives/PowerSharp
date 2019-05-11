@@ -31,7 +31,6 @@ function Prompt {
 }
 
 cls
-Write-Host $(weather -City Inverness -Country UK)
 $Host.UI.RawUI.WindowTitle = (Get-Date -UFormat '%d/%m/%y - SharpBox').Tostring()
 
 
