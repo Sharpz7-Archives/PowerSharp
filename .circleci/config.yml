@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   release: sharptools/release@0.0.3
-  go: sharptools/powersharp@0.0.2
+  go: sharptools/powershell@0.0.2
 
 
 workflows:
