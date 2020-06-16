@@ -8,7 +8,7 @@ orbs:
 workflows:
   workflow:
     jobs:
-      - powershell/package:
+      - powershell/package
 
       - release/github_job:
           context: General
