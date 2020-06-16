@@ -15,46 +15,17 @@ and make sure you use that font in your terminal. [Nerd-Fonts](https://nerdfonts
 It is recommended to have a nice terminal emulator for the best experience:
 
    - [Hyper](https://hyper.is)
-   - [Cmder](https://cmder.net)
+   - [Alacritty](https://github.com/alacritty/alacritty)
    - [Fluent-Terminal](https://github.com/felixse/FluentTerminal)
 
-To allow all the scripts to run without issue, or create you own, this command must be run:
-
-> \$ Set-ExecutionPolicy unrestricted
-
-**This will likely need admin access.**
 
 Installation
 ============
 
-The easiest way to install the app is to use the `install.ps1` script.
+In a "root" powershell terminal:
 
-**Steps**
+> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-Clone or download the repository.
-
-> \$ git clone https://github.com/Sharpz7/PowerSharp.git
-
-> \$ cd PowerSharp
-
-Run the script with:
-
-> \$ .\install
-
-**PLEASE NOTE**
-
-To use the `.env` files, copy the files and remove the `default` from the front of there names, then they
-are good to go!
-
-To disable the powershell beep, use:
-
-> \$ set-service beep -startuptype disabled
-
-Special Thanks
-==========
-Special thanks to Nick Tamm, the creator of the weather module I use.
-
-His github can be found [here](https://github.com/obs0lete/Get-Weather)
 
 Maintainers and Developers
 ==========

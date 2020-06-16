@@ -1,0 +1,19 @@
+version: 2.1
+
+orbs:
+  release: sharptools/release@0.0.3
+  go: sharptools/powersharp@0.0.2
+
+
+workflows:
+  workflow:
+    jobs:
+      - powershell/package
+
+      - release/github_job:
+          context: General
+          requires:
+            - powershell/package
+          filters:
+            branches:
+              only: master
