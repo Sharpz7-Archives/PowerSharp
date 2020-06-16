@@ -2,13 +2,13 @@ version: 2.1
 
 orbs:
   release: sharptools/release@0.0.3
-  go: sharptools/powershell@0.0.2
+  powershell: sharptools/powershell@0.0.2
 
 
 workflows:
   workflow:
     jobs:
-      - powershell/package
+      - powershell/package:
 
       - release/github_job:
           context: General
